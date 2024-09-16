@@ -295,27 +295,27 @@ span{
     background: var(--second-bg-color)
 }
 
-.formation {
+.education {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: auto;
     padding-bottom: 5rem;
 }
-.formation .formation-ligne {
+
+.education .education-row{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 5rem;
 }
 
-.formation-ligne .education-column {
+.education-row .education-column{
     flex: 1 1 40rem;
 }
+
 .education-column .title {
     font-size: 2.5rem;
-    margin: 0 0 1.5rem 2rem;
+    margin : 0 0 1.5rem 2rem;
 }
-
-
-
