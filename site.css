@@ -319,3 +319,23 @@ span{
     font-size: 2.5rem;
     margin : 0 0 1.5rem 2rem;
 }
+
+.education-column .education-box{
+    border-left: .2rem solid var(--main-color);
+}
+.education-box .education-content{
+    position: relative;
+    padding-left: 2rem;
+}
+.education-content .contenu{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+}
+.education-content .content .year {
+    font-size: 1.6rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+}
