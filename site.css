@@ -305,14 +305,14 @@ span{
 }
 
 .education .education-row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 5rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .education-row .education-column{
-    flex: 1 1 40rem;
+    flex: 1 1 40;
+  
 }
 
 .education-column .title {
