@@ -291,9 +291,10 @@ span{
 }
     
 .btn-box.btns a::before {
-
     background: var(--second-bg-color)
 }
+
+/*Education*/
 
 .education {
     display: flex;
@@ -312,11 +313,10 @@ span{
 
 .education-row .education-column{
     flex: 1 1 40;
-  
 }
 
 .education-column .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin : 0 0 1.5rem 2rem;
 }
 
@@ -327,15 +327,13 @@ span{
     position: relative;
     padding-left: 2rem;
 }
+
 .education-content .contenu{
     position: relative;
     padding: 1.5rem;
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
     margin-bottom: 2rem;
+    width: 75vh;
 }
-.education-content .content .year {
-    font-size: 1.6rem;
-    color: var(--main-color);
-    padding-bottom: .5rem;
-}
+
