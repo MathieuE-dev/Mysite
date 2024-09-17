@@ -323,6 +323,18 @@ span{
 .education-column .education-box{
     border-left: .2rem solid var(--main-color);
 }
+
+.education-box .education-content::before{
+    content: '';
+    top: 0;
+    left: -1.1rem;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
 .education-box .education-content{
     position: relative;
     padding-left: 2rem;
@@ -335,5 +347,39 @@ span{
     border-radius: .6rem;
     margin-bottom: 2rem;
     width: 75vh;
+    overflow: hidden;
 }
 
+.education-content .contenu::before {
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.education-content .contenu:hover::before{
+    width: 100%;
+}
+
+.education-content .contenu .year {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+}
+.education-content .contenu .year i {
+    padding-right: .5rem;
+}
+
+.education-content .contenu h3 {
+    font-size: 2rem;
+}
+.education-content .contenu p {
+    font-size: 1.5rem;
+    padding-top: .5rem;
+}
