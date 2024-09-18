@@ -627,13 +627,40 @@ footer p {
     font-size: 1.2rem;
 }
 
-footer .footer-iconTop{
+footer .footer-iconTop {
     position: relative;
     padding: .9rem;
     background-color: var(--main-color);
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
 }
+
+footer .footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--bg-color);
+    transition: .5s;
+}
+footer .footer-iconTop a:hover i{
+    color: var(--main-color);
+}
+footer .footer-iconTop a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+footer .footer-iconTop a:hover::before{
+    width: 100%;
+}
+
+/* animation footer */
 
 footer .wave {
     position: absolute;
