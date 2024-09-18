@@ -44,7 +44,9 @@ body{
     transition: .3s;
 }
 
-
+.header.sticky {
+    background: yellowgreen;
+}
 
 .logo{
 
@@ -78,11 +80,13 @@ section{
     padding: 10rem 9% 2rem;
 }
 
+/*accueil section*/
 .accueil{
     display: flex;
     align-items: center;
     padding:0 9%;
 }
+
 
 .content-accueil {
     max-width: 60rem;
@@ -219,8 +223,8 @@ section{
     width: 100%;
 }
 
-/*pas encore d'image valide sur la droite*/
 
+/*apropos de section*/
 
 .about{
     display: flex;
@@ -622,13 +626,16 @@ footer p {
 }
 
 footer .footer-iconTop {
-    position: relative;
+    position: absolute;
     padding: .9rem;
     background-color: var(--main-color);
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
     z-index: 1;
     overflow: hidden;
+    right: 15px;
+    bottom: 15px;
+
 }
 
 footer .footer-iconTop a i {
