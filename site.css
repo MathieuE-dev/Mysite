@@ -41,7 +41,10 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: .3s;
 }
+
+
 
 .logo{
 
@@ -218,15 +221,6 @@ section{
 
 /*pas encore d'image valide sur la droite*/
 
-.accueil-ImgHover{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45%;
-    height: 100%;
-    background:transparent;
-    border: 2px solid yellow;
-}
 
 .about{
     display: flex;
