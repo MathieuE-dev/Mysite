@@ -1,37 +1,29 @@
+
 <?php
-$name = $_POST["name"];
-$email = $_POST["email"];
-$number = $_POST["number"];
-$subject $_POST["sujet"]
-$message = $_POST["message"];
 
-require "vendor/autoload.php";
-
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-
-$mail = new PHPMailer(true);
-
-// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
-
-$mail->isSMTP();
-$mail->SMTPAuth = true;
-
-$mail->Host = "smtp-mail.outlook.com";
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-$mail->Port = 587;
-
-$mail->Username = "you@example.com";
-$mail->Password = "password";
-
-$mail->setFrom($email, $name);
-$mail->addAddress("mathieu.exam@outlook.fr", "Mathieu");
-
-$mail->Subject = $subject;
-$mail->Body = $message;
-$mail->number = $number;
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$mail = $_POST['mail'];
+$content = $_POST['content'];
 
 
-$mail->send();
+$to      = 'mathieu.exam@outlook.fr';
+$subject = $name;
+$message = "<div style='background:#272727; padding: 50px; color: #ecf0f1;height: 600px;'>
+                <h1 style='text-align: center;margin-bottom: 50px'>Message</h1>
+                 <hr style='border-color: #c0392b'>
+                 <p style='text-align: center;font-size: 1.5rem;'>" . $content . "</p>
+                 <hr style='border-color: #c0392b'>
+                 <p style='text-align: center;'>Numero de telephone: " . $phone . "</p>
+                 <p style='text-align: center;'>Email: " . $mail . "</p>
+            </div>";
+$headers .= 'From: <mathieu.exam@outlook.fr>' . "\r\n"; 
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+$headers .= "Disposition-Notification-To: $from  \n";
+$headers .= "X-Priority: 1  \n";
+$headers .= "X-MSMail-Priority: High \n";
 
-header("Location: sent.html");
+
+mail($to, $subject, $message, $headers);
+?>
