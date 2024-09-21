@@ -221,7 +221,9 @@ section{
     width: 170px;
     display: flex;
     justify-content: space-between;
+    
 }
+
 
 .accueil-réseau a {
     position: relative;
@@ -238,6 +240,9 @@ section{
     z-index: 1;
     overflow: hidden;
 }
+    
+
+   
 
 .accueil-réseau a:hover{
     color: var(--bg-color);
