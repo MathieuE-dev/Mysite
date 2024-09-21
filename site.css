@@ -851,6 +851,11 @@ section:nth-child(odd) .animate.scroll,
         padding: 2rem 4%;
     }
 }
+
+@media(max-width: 850px){
+    
+}
+
 @media(max-width: 768px){
     .header{
         background: var(--bg-color);
