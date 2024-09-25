@@ -920,13 +920,7 @@ section:nth-child(odd) .animate.scroll,
         display: flex;
         flex-direction: column;
     }
-    .accueil-réseau {
-        width: 160px;
-    }
-    .accueil-réseau a {
-        width: 38px;
-        height: 38px;
-    }
+    
    
 }
 

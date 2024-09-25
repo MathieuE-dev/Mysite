@@ -30,10 +30,11 @@ window.onscroll = () => {
 
             sec.classList.add('show-animate');
         }
+        /*
         else {
             sec.classList.remove('show-animate');
 
-        }
+        }*/
     });
 
     let header = document.querySelector('header');
