@@ -33,8 +33,8 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 2rem 9%;
+    width: 100vw;
+    padding: 2rem 5%;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -65,6 +65,7 @@ body{
     font-weight: 500;
     margin-left: 3.5rem;
     transition: .3s;
+   
 }
 
 .navbar a:hover, 
@@ -93,7 +94,7 @@ section{
 }
 
 .content-accueil {
-    max-width: 60rem;
+    max-width: 70rem;
 }
 
 .content-accueil h1 {
@@ -218,10 +219,9 @@ section{
 .accueil-réseau{
     position: absolute;
     bottom: 4rem;
-    width: 170px;
     display: flex;
     justify-content: space-between;
-    
+    gap: 10px;
 }
 
 
@@ -241,9 +241,6 @@ section{
     overflow: hidden;
 }
     
-
-   
-
 .accueil-réseau a:hover{
     color: var(--bg-color);
 }
@@ -357,13 +354,14 @@ span{
 }
 
 .education-row .education-column{
-    flex: 1 1 40;
+  width: 45%;
+  min-width: 350px;
 }
 
 .education-column .title {
     position: relative;
     display: inline-block;
-    font-size: 2.5 rem;
+    font-size: 5 rem;
     margin : 0 0 1.5rem 2rem;
 }
 
@@ -394,7 +392,6 @@ span{
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
     margin-bottom: 2rem;
-    width: 75vh;
     overflow: hidden;
 }
 
@@ -681,6 +678,7 @@ footer .navigation-menu li a {
 
 footer .navigation-menu li a:hover{
     opacity: 1;
+    color: var(--main-color);
 }
 
 footer p {
@@ -701,7 +699,6 @@ footer .footer-iconTop {
     overflow: hidden;
     right: 15px;
     bottom: 15px;
-
 }
 
 footer .footer-iconTop a i {
@@ -857,9 +854,6 @@ section:nth-child(odd) .animate.scroll,
     }
 }
 
-@media(max-width: 850px){
-    
-}
 
 @media(max-width: 768px){
     .header{
@@ -915,7 +909,6 @@ section:nth-child(odd) .animate.scroll,
     .navbar.active a {
         transform: translateX(0);
         transition-delay: .25s;
-
     }
 }
 
