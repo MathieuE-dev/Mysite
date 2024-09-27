@@ -178,6 +178,7 @@ section{
     z-index: 1;
     overflow: hidden;
     transition: .5s;
+    text-align: center;
 }
 
 .btn-box .btn:hover{
@@ -623,6 +624,7 @@ span{
     cursor: pointer;
 }
 /*fin contact*/
+
 /*footer*/ 
 
 
@@ -724,6 +726,7 @@ footer .footer-iconTop a:hover::before{
     width: 100%;
 }
 /*footer*/
+
 /* animation footer */
 
 footer .wave {
